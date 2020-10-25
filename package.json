@@ -1,0 +1,42 @@
+{
+  "name": "ibmmq-wrapper",
+  "version": "0.1.0",
+  "description": "A light library-wrapper for ibmmq with easy interface.",
+  "main": "index.es5.js",
+  "engines": {
+    "node": ">=10.20"
+  },
+  "files": [
+    "index.es5.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel-node": "babel-node",
+    "build": "NODE_ENV=production babel ./index.js --out-file index.es5.js",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexdeia/ibmmq-wrapper.git"
+  },
+  "author": "Alexey Klykov/Daniil Kuzmin",
+  "license": "MIT",
+  "keywords": [
+    "mq",
+    "ibmmq"
+  ],
+  "dependencies": {
+    "ibmmq": "^0.9.15"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.22.0"
+  }
+}
